@@ -1,0 +1,62 @@
+.contacto-main {
+    color: $blanco;
+    font-family: "Nunito", sans-serif;
+}
+
+.fondo-contacto {
+    background-color: $violeta;
+    background-size: cover;
+    background-position: center;
+    background: repeating-linear-gradient(-30deg, $negro 5px, $negro 5px, $violeta 300px);
+    margin-left: 10px;
+}
+
+input {
+    transition: all 2s;
+
+    :focus {
+        font-size: 20px;
+        border: 4px solid lightcoral;
+        color: lightcoral
+    }
+}
+
+.boton-enviar {
+    margin-top: 25px;
+}
+
+.redesSociales {
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+$redessociales: (
+        redes1: rgb(5, 151, 5),
+        redes2:  rgb(23, 115, 146),
+        redes3: rgb(204, 49, 2)
+); 
+
+@each $redes, $color in $redessociales {
+    .boton--#{$redes} {
+        background-color: $color;
+        width: 50px;
+        height: 50px;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;   
+        font-family: 'Nunito', sans-serif;
+        color: whitesmoke;
+        margin: 5px;
+    }
+}
+
+a:hover {
+    color: whitesmoke;
+}
+
+i {
+    margin-top: 7px;
+    font-size: 30px;
+}
+
+

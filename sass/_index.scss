@@ -1,0 +1,129 @@
+.body--apariencia {
+    background-color: $negro;
+    background-position: center;
+
+}
+
+.header--apariencia {
+    width: 100%;
+    background-color: $negro;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.divLogo {
+    width: 20%;
+
+    img {
+        width: 100%;
+    
+    }
+}
+
+.divTitulo {
+    width: 80%;
+}
+
+.header__p--titulo {
+    color: $blanco;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 7.8rem;
+    font-family: "Nunito", sans-serif;
+    letter-spacing: 0.4cm;
+    animation-duration: 5s;
+    animation-name: efecto;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+
+}
+
+$sombra1: violeta;
+$sombra2: dorado;
+$sombra3: bordo;
+
+$phrakia: $sombra1;
+
+.header__p--titulo {
+    
+@if $phrakia == $sombra3 {
+    text-shadow: 5px 5px 5px maroon;
+} @else if $phrakia == dorado  {
+        text-shadow: 5px 5px 5px gold;
+} @else {
+       text-shadow: 5px 5px 5px indigo;
+}
+}
+
+@keyframes efecto {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+.nav--apariencia {
+    background-color: $negro;
+    height: auto;
+    width: 100%;
+    border-top: 2px solid $blanco;
+    border-bottom: 2px solid $blanco;
+    font-family: 'Nunito', sans-serif;
+
+    a {
+        color: $blanco;
+        text-decoration: none;
+        font-size: 20px;
+        padding-left: 80px;
+    }
+
+    a:hover {
+        color: gold;
+    }
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    ul {
+        position: absolute;
+        display: none;
+        left: -30px;
+    }
+
+    li {
+        display: inline-block;
+        margin-left: 10px;
+        position: relative;
+        
+    }
+
+    li:hover ul {
+        display: block;
+    }
+
+    ul li a {
+        color: $blanco;
+        font-size: 1rem;
+        padding-left: 30px;
+        text-align: center;
+        list-style-type: circle;
+        list-style-position: inside;
+    }
+
+    ul li {
+        background-color: $violeta;
+        background-size: cover;
+    }
+}
+
+li {
+    list-style: none;
+}

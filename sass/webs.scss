@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap');
+
+$negro: black;
+$blanco: whitesmoke;
+$violeta: indigo;
+
+$size: 50px;
+
+
+.webs-body {
+    background-color: $negro;
+}
+
+.header__h2--titulo {
+    font-size: 2.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Nunito", sans-serif;
+    color: $blanco;
+    text-decoration: overline;
+    margin-top: $size - 15;
+    margin-bottom: $size - 15;
+}
+
+.header__article--margin {
+    margin-bottom: $size;
+    border-bottom: white solid 1px;
+}
+
+.footer__p--copyright {
+    text-decoration: none;
+    color: $blanco;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: $size;
+}
+
+@import "index";
+@import "tienda";
+@import "cursos";
+@import "galeria";
+@import "bios";
+@import "contacto";
+@import "error404";
+

@@ -1,0 +1,13 @@
+.tienda-main {
+    margin-bottom: 100px;
+}
+#cartas {
+    display: flex;
+    justify-content: center;
+}
+.boton {
+    height: 1px;
+}
+@for $i from 1 through 2 {
+    .subir-#{$i} { width: 5rem * $i; }
+  }

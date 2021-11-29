@@ -1,0 +1,37 @@
+.curso-titulos {
+    font-family: 'Noto Sans Mono', monospace;
+    font-size: 1.5rem;
+    color: $blanco;
+}
+
+$colores: violet , gold , maroon;
+
+  @each $color in $colores {
+      .cursoTexto-#{$color} {  
+        border: 2px groove $color;
+        color: white;
+        font-family: "Nunito", sans-serif;
+        font-size: 1rem;
+        padding-left: 5px;
+        text-align: center;
+        margin: 50px;
+      }
+    }
+
+.divFotoCurso {
+    margin-top: 20px;
+    animation-name: divFotoCurso;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+
+@keyframes divFotoCurso {
+    0% {
+        transform: translateX(0px);
+    }
+
+    100% {
+        transform: translateX(500px);
+    }
+}

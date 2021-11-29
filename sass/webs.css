@@ -1,0 +1,386 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap");
+.webs-body {
+  background-color: black;
+}
+
+.header__h2--titulo {
+  font-size: 2.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Nunito", sans-serif;
+  color: whitesmoke;
+  text-decoration: overline;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+.header__article--margin {
+  margin-bottom: 50px;
+  border-bottom: white solid 1px;
+}
+
+.footer__p--copyright {
+  text-decoration: none;
+  color: whitesmoke;
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-top: 50px;
+}
+
+.body--apariencia {
+  background-color: black;
+  background-position: center;
+}
+
+.header--apariencia {
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.divLogo {
+  width: 20%;
+}
+.divLogo img {
+  width: 100%;
+}
+
+.divTitulo {
+  width: 80%;
+}
+
+.header__p--titulo {
+  color: whitesmoke;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 7.8rem;
+  font-family: "Nunito", sans-serif;
+  letter-spacing: 0.4cm;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-name: efecto;
+          animation-name: efecto;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.header__p--titulo {
+  text-shadow: 5px 5px 5px indigo;
+}
+
+@-webkit-keyframes efecto {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes efecto {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.nav--apariencia {
+  background-color: black;
+  height: auto;
+  width: 100%;
+  border-top: 2px solid whitesmoke;
+  border-bottom: 2px solid whitesmoke;
+  font-family: "Nunito", sans-serif;
+}
+.nav--apariencia a {
+  color: whitesmoke;
+  text-decoration: none;
+  font-size: 20px;
+  padding-left: 80px;
+}
+.nav--apariencia a:hover {
+  color: gold;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+ul ul {
+  position: absolute;
+  display: none;
+  left: -30px;
+}
+ul li {
+  display: inline-block;
+  margin-left: 10px;
+  position: relative;
+}
+ul li:hover ul {
+  display: block;
+}
+ul ul li a {
+  color: whitesmoke;
+  font-size: 1rem;
+  padding-left: 30px;
+  text-align: center;
+  list-style-type: circle;
+  list-style-position: inside;
+}
+ul ul li {
+  background-color: indigo;
+  background-size: cover;
+}
+
+li {
+  list-style: none;
+}
+
+.tienda-main {
+  margin-bottom: 100px;
+}
+
+#cartas {
+  display: flex;
+  justify-content: center;
+}
+
+.boton {
+  height: 1px;
+}
+
+.subir-1 {
+  width: 5rem;
+}
+
+.subir-2 {
+  width: 10rem;
+}
+
+.curso-titulos {
+  font-family: "Noto Sans Mono", monospace;
+  font-size: 1.5rem;
+  color: whitesmoke;
+}
+
+.cursoTexto-violet {
+  border: 2px groove violet;
+  color: white;
+  font-family: "Nunito", sans-serif;
+  font-size: 1rem;
+  padding-left: 5px;
+  text-align: center;
+  margin: 50px;
+}
+
+.cursoTexto-gold {
+  border: 2px groove gold;
+  color: white;
+  font-family: "Nunito", sans-serif;
+  font-size: 1rem;
+  padding-left: 5px;
+  text-align: center;
+  margin: 50px;
+}
+
+.cursoTexto-maroon {
+  border: 2px groove maroon;
+  color: white;
+  font-family: "Nunito", sans-serif;
+  font-size: 1rem;
+  padding-left: 5px;
+  text-align: center;
+  margin: 50px;
+}
+
+.divFotoCurso {
+  margin-top: 20px;
+  -webkit-animation-name: divFotoCurso;
+          animation-name: divFotoCurso;
+  -webkit-animation-duration: 15s;
+          animation-duration: 15s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+}
+
+@-webkit-keyframes divFotoCurso {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(500px);
+  }
+}
+
+@keyframes divFotoCurso {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(500px);
+  }
+}
+.galeria {
+  width: 100%;
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.body__article--margin {
+  margin-bottom: 50px;
+  border-bottom: white solid 1px;
+}
+
+.body__h2--titulo {
+  font-size: 2.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Nunito", sans-serif;
+  color: whitesmoke;
+  text-decoration: overline;
+  margin-top: 15px;
+  margin-bottom: 35px;
+}
+
+.footer--margin {
+  margin-top: 50px;
+}
+
+.color1 {
+  background-color: black;
+}
+
+.aside--color2 {
+  background-color: indigo;
+  color: whitesmoke;
+}
+
+.contacto-main {
+  color: whitesmoke;
+  font-family: "Nunito", sans-serif;
+}
+
+.fondo-contacto {
+  background-color: indigo;
+  background-size: cover;
+  background-position: center;
+  background: repeating-linear-gradient(-30deg, black 5px, black 5px, indigo 300px);
+  margin-left: 10px;
+}
+
+input {
+  transition: all 2s;
+}
+input :focus {
+  font-size: 20px;
+  border: 4px solid lightcoral;
+  color: lightcoral;
+}
+
+.boton-enviar {
+  margin-top: 25px;
+}
+
+.redesSociales {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.boton--redes1 {
+  background-color: #059705;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-family: "Nunito", sans-serif;
+  color: whitesmoke;
+  margin: 5px;
+}
+
+.boton--redes2 {
+  background-color: #177392;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-family: "Nunito", sans-serif;
+  color: whitesmoke;
+  margin: 5px;
+}
+
+.boton--redes3 {
+  background-color: #cc3102;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-family: "Nunito", sans-serif;
+  color: whitesmoke;
+  margin: 5px;
+}
+
+a:hover {
+  color: whitesmoke;
+}
+
+i {
+  margin-top: 7px;
+  font-size: 30px;
+}
+
+.fondo-error {
+  background-color: indigo;
+  background-size: cover;
+  background-position: center;
+  background: repeating-linear-gradient(-30deg, black 5px, black 5px, indigo 300px);
+  margin-left: 10px;
+}
+
+.error-parrafo {
+  font-family: "Noto Sans Mono", monospace;
+  font-size: 5rem;
+  text-align: center;
+  color: whitesmoke;
+}
+
+.error-titulos {
+  font-size: 4.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Nunito", sans-serif;
+  color: whitesmoke;
+  text-decoration: overline;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+.error-link {
+  text-decoration: none;
+  color: whitesmoke;
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-top: 50px;
+  font-size: 2rem;
+}
+
+.link:hover {
+  color: gold;
+}
+
+.error-icono {
+  color: whitesmoke;
+  text-align: center;
+}
+
+.fa-dizzy {
+  font-size: 10rem;
+}/*# sourceMappingURL=webs.css.map */
