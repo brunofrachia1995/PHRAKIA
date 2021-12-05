@@ -1,6 +1,5 @@
 .body--apariencia {
-    background-color: $negro;
-    background-position: center;
+    background-color: black;
 
 }
 
@@ -10,6 +9,11 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.logo {
+    height: 10vh;
+    width: 10vw;
 }
 
 .divLogo {

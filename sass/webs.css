@@ -30,7 +30,6 @@
 
 .body--apariencia {
   background-color: black;
-  background-position: center;
 }
 
 .header--apariencia {
@@ -39,6 +38,11 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+.logo {
+  height: 10vh;
+  width: 10vw;
 }
 
 .divLogo {
