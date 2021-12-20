@@ -25,59 +25,433 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="sass/webs.css">
+
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
+
+        @media (max-width: 575.98px) {
+
+            h1 {
+                font-size: 40px;
+                line-height: normal;
+            }
+
+            .planes {
+                min-width: unset;
+                padding: 40px;
+            }
+
+            .galeria-sub {
+                font-size: 25px;
+            }
+
+            .galeria-parrafo {
+                font-size: 15px;
+            }
+
+            .carousel-item p {
+                font-size: 20px;
+            }
+
+            #footer-menu {
+                display: block;
+                padding: 20px 0px;
+                font-size: 20px;
+                margin-left: 10px;
+            }
+        }
+
+        @media (min-width: 576px) and (max-width: 767.98px) {}
+
+        @media (min-width: 768px) and (max-width: 991.98px) {
+            .planes {
+                min-width: unset;
+                padding: 40px 20px;
+            }
+
+            .contacto-footer {
+                margin-right: 50px;
+            }
+        }
+
+        @media (min-width: 992px) and (max-width: 1199.98px) {}
+
+        @media (min-width: 1200px) {}
     </style>
+
 </head>
 
-<body class="body--apariencia">
-    <header class="header--apariencia">
-
-        <nav id="menu" class="navbar navbar-expand-sm bg-light navbar-light fixed-top">
-            <!-- Brand -->
-
-
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav id="menu" class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
             <a class="navbar-brand" href="index.html"><img class="logo" src="img/logoindex.svg" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <ion-icon name="menu-outline"></ion-icon>
+            </button>
 
-            <!-- Links -->
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="tienda.html">TIENDA</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="galeria.html">GALERÍA</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="cursos.html" id="navbardrop" data-toggle="dropdown">CURSOS
-                    </a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="fotografia.html">FOTOGRAFÍA</a>
-                        <a class="dropdown-item" href="revelado.html">REVELADO</a>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#curso">Cursos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#staff">Staff</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reviews">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+
+    <section id="home">
+
+        <div class="container">
+            <div class="content-center .topmargin-lg">
+                <h1 class="titulo-fondo">PHRAKIA</h1>
+                <p class="parrafo-fondo">Escuela de fotografía</p>
+                <a href="#carrera" class="btn btn-light topmargin-sm">
+                    <p class="texto-boton">Empezá ya<ion-icon class="dropright-circle" name="play-circle"></ion-icon>
+                    </p>
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="curso">
+        <div class="container-fluid">
+            <div class="content-center">
+                <h2 class="titulo-portafolio">Sumate a estudiar a esta increible <b>escuela de fotografía</b> </h2>
+                <p>Desarrollamos programas de estudio profundos y dinámicos, acompañanando a los mismos con ideas pedagógicas claras</p>
+
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="galeria-contenedor">
+                        <div class="galeria-look">
+                            <a href="">
+                                <h2 class="galeria-sub">Recitales</h2>
+                            </a>
+                            <a href="">
+                                <p class="galeria-parrafo">Potenciá tus fotos en eventos masivos</p>
+                            </a>
+                        </div>
+                        <img src="img/recital.jpeg" alt="galeria1" class="img-fluid">
+
                     </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="bios.html">BIOS</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contacto.html">CONTACTO</a>
+
+                </div>
+
+                <div class="col-md-6">
+                    <div class="galeria-contenedor">
+                        <div class="galeria-look">
+                            <a href="">
+                                <h2 class="galeria-sub">Sociales</h2>
+                            </a>
+                            <a href="">
+                                <p class="galeria-parrafo">Aprendé técnicas fundamentales para eventos sociales</p>
+                            </a>
+                        </div>
+                        <img src="img/social.jpeg" alt="galeria2" class="img-fluid">
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-6">
+                    <div class="galeria-contenedor">
+                        <div class="galeria-look">
+                            <a href="">
+                                <h2 class="galeria-sub">Iluminación Integral</h2>
+                            </a>
+                            <a href="">
+                                <p class="galeria-parrafo">Adquirí conocimientos claves de iluminación </p>
+                            </a>
+                        </div>
+                        <img src="img/analog3.jpeg" alt="galeria3" class="img-fluid">
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-6">
+                    <div class="galeria-contenedor">
+                        <div class="galeria-look">
+                            <a href="">
+                                <h2 class="galeria-sub">Analógica</h2>
+                            </a>
+                            <a href="">
+                                <p class="galeria-parrafo">Convertite en un experto con cámara analógica</p>
+                            </a>
+                        </div>
+                        <img src="img/byn8.jpeg" alt="galeria4" class="img-fluid">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            
+
+        </div>
+
+    </section>
+
+    <section id="staff" class="bg-light-gray">
+        <div class="container">
+            <div class="content-center">
+                <h2 class="titulo-portafolio">Conocé a nuestro <b>staff de profesionales</b> </h2>
+                <p>Contamos con un trío de profesionales especializados en distintas ramas de la</p>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="prof-contenedor">
+                        <div class="prof-look">
+                            <h5 class="prof-titulo"><b>Laura Cazares</b></h5>
+                            <span>Iluminadora y retratista</span>
+                            <ul class="list-inline">
+                                <li class="list-inline-item"><a href="https://www.instagram.com/">
+                                        <ion-icon name="logo-instagram"></ion-icon>
+                                    </a></li>
+                                <li class="list-inline-item"><a href="https://www.twitter.com/">
+                                        <ion-icon name="logo-twitter"></ion-icon>
+                                    </a></li>
+                                <li class="list-inline-item"><a href="https://www.linkedin.com/">
+                                        <ion-icon name="logo-linkedin"></ion-icon>
+                                    </a></li>
+                            </ul>
+                        </div>
+                        <img src="img/profesor1.jpeg" alt="profesor1" class="img-fluid">
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="prof-contenedor">
+                        <div class="prof-look">
+                            <h5 class="prof-titulo"><b>Milton Miller</b></h5>
+                            <span>Director</span>
+                            <ul class="list-inline">
+                                <li class="list-inline-item"><a href="https://www.instagram.com/">
+                                        <ion-icon name="logo-instagram"></ion-icon>
+                                    </a></li>
+                                <li class="list-inline-item"><a href="https://www.twitter.com/">
+                                        <ion-icon name="logo-twitter"></ion-icon>
+                                    </a></li>
+                                <li class="list-inline-item"><a href="https://www.linkedin.com/">
+                                        <ion-icon name="logo-linkedin"></ion-icon>
+                                    </a></li>
+                            </ul>
+                        </div>
+                        <img src="img/profesor4.jpeg" alt="profesor2" class="img-fluid">
+                    </div>
+
+                </div>
+
+                <div class="col-md-4">
+                    <div class="prof-contenedor">
+                        <div class="prof-look">
+                            <h5 class="prof-titulo"><b>Obdulio Varela</b></h5>
+                            <span>Analógica y Revelado</span>
+                            <ul class="list-inline">
+                                <li class="list-inline-item"><a href="https://www.instagram.com/">
+                                        <ion-icon name="logo-instagram"></ion-icon>
+                                    </a></li>
+                                <li class="list-inline-item"><a href="https://www.twitter.com/">
+                                        <ion-icon name="logo-twitter"></ion-icon>
+                                    </a></li>
+                                <li class="list-inline-item"><a href="https://www.linkedin.com/">
+                                        <ion-icon name="logo-linkedin"></ion-icon>
+                                    </a></li>
+                            </ul>
+                        </div>
+                        <img src="img/profesor3.jpeg" alt="profesor3" class="img-fluid">
+                    </div>
+
+                </div>
+
+            </div>
+
+    </section>
+
+    <section id="tarifas" class="division">
+        <div class="container">
+            <div class="content-center">
+                <h2 class="titulo-portafolio">Conocé las tarifas <b>de los cursos profesionales</b> </h2>
+                <p>Potenciá tus conocimientos en este bello arte</p>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="precio-contenedor">
+                        <div class="planes plan-light">
+                            <h4>Pack cursos 1 - </h4>
+                            <h2>$3000</h2>
+                            <h4 class="topmargin-xs">Accedé a todos estos beneficios</h4>
+                            <ul class="topmargin-xs">
+                                <li>Taller de iluminación</li>
+                                <li>Taller de Recitales</li>
+                                <li>Laboratorio Analógico</li>
+                                <li>Título certificado</li>
+                            </ul>
+                            <a href="" class="btn btn-dark full-width topmargin-xs">Inscribite</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="precio-contenedor">
+                        <div class="planes plan-dark">
+                            <h4>Pack Cursos Premium</h4>
+                            <h2>$4500</h2>
+                            <h4 class="topmargin-xs">Accedé a todos estos beneficios</h4>
+                            <ul class="topmargin-xs">
+                                <li>Taller de iluminación</li>
+                                <li>Taller de Recitales, Sociales</li>
+                                <li>Laboratorio Analógico</li>
+                                <li>Título certificado</li>
+                            </ul>
+                            <a href="" class="btn btn-transparent full-width topmargin-xs">Inscribite</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="reviews" class="division">
+        <div class="container">
+            <div class="content-center">
+                <h2>Algunos comentarios de <b>nuestros estudiantes que pasaron por la institución</b></h2>
+            </div>
+            <div class="media border p-3">
+                <div class="media-body">
+                    <h4>19 de Febrero de 2021  <small><i>Jorgelina Gómez</i></small></h4>
+                    <p>Me encantó, se aprende mucho. Los profesores unos genios, súper capacitados</p>
+                </div>
+                <img src="img/estudiante1.jfif" alt="John Doe" class="ml-3 mt-3 rounded-circle" style="width:60px;">
+            </div>
+            <div class="media border p-3">
+                <div class="media-body">
+                    <h4>29 de Mayo de 2021  <small><i>Luz Trotta</i></small></h4>
+                    <p>Increible energía se maneja dentro de PHRAKIA!</p>
+                </div>
+                <img src="img/estudiante2.jfif" alt="John Doe" class="ml-3 mt-3 rounded-circle" style="width:60px;">
+            </div>
+            <div class="media border p-3">
+                <div class="media-body">
+                    <h4>12 de Abril de 2021   <small><i>Julia Zoares</i></small></h4>
+                    <p>Pongan más cursos por favor, me fui muy enriquecida de conceptos y prácticas</p>
+                </div>
+                <img src="img/prof1.jpeg" alt="John Doe" class="ml-3 mt-3 rounded-circle" style="width:60px;">
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contacto">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 topmargin-sm">
+                    <h3>¿Listo para conocer el mundo fotográfico? Consultá tus dudas</h3>
+                    <p>Poné el nombre del pack por el que querés averiguar en la sección de Contacto</p>
+                </div>
+                <div class="col-md-6 topmargin-sm">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="" placeholder="Nombre y Apellido">
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <form action="" class="form-group">
+                                <input type="email" class="form-control" id="" placeholder="Mail">
+                            </form>
+                        </div>
+                        <div class="col-md-12">
+                            <form action="" class="form-group">
+                                <input type="text" class="form-control" id="" placeholder="Pack Curso de interés">
+                            </form>
+                        </div>
+                        <div class="col-md-12">
+                            <form action="" class="form-group">
+                                <input type="number" class="form-control" id="" placeholder="Número de Celular">
+                            </form>
+                        </div>
+                        <div class="col-md-12">
+                            <a href="" class="btn btn-dark full-width">Enviar Consulta</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+    <footer>
+
+    <section id="footer" class="bg-negro">
+        <div class="container">
+            <img src="img/logoindex.svg" alt="logo" class="logo">
+            <ul class="list-inline">
+                <li class="list-inline-item" id="footer-menu"><a href="#home">Home</a></li>
+                <li class="list-inline-item" id="footer-menu"><a href="#curso">Cursos</a></li>
+                <li class="list-inline-item" id="footer-menu"><a href="#staff">Staff</a></li>
+                <li class="list-inline-item" id="footer-menu"><a href="#reviews">Reviews</a></li>
+                <li class="list-inline-item" id="footer-menu"><a href="#contacto" class="contacto-footer">Contacto</a>
                 </li>
             </ul>
-        </nav>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="https://www.whatsapp.com/">
+                        <ion-icon name="logo-whatsapp"></ion-icon>
+                    </a></li>
+                <li class="list-inline-item"><a href="https://www.instagram.com/">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a></li>
+                <li class="list-inline-item"><a href="https://www.gmail.com/">
+                        <ion-icon name="mail-outline"></ion-icon>
+                    </a></li>
+            </ul>
+            <small>Todos los derechos reservados - 2021 PHRAKIA</small>
+        </div>
 
-    </header>
+    </section>
+</footer>
 
-    <main></main>
-    <footer></footer>
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
 </body>
 
